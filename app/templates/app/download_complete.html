@@ -1,0 +1,33 @@
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nazlne</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'nazlne/css/bootstrap.min.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'nazlne/css/font-awesome.min.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'nazlne/css/elegant-icons.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'nazlne/css/flaticon.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'nazlne/css/nice-select.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'nazlne/css/barfiller.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'nazlne/css/magnific-popup.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'nazlne/css/jquery-ui.min.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'nazlne/css/owl.carousel.min.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'nazlne/css/slicknav.min.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'nazlne/css/style.css'%}" type="text/css">
+</head>
+
+<div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Well done!</h4>
+    <p> successfully downloaded video</p>
+    <hr>
+    <p>location video in <link href="{{loc}}">{{loc}}</link></p>
+    <p class="mb-0">if you need download another video  <a href="{% url 'app:down' %}">click here</a></p>
+  </div>
